@@ -1,0 +1,8 @@
+{
+	"extends": [
+		"@abhijithvijayan/eslint-config/typescript"
+	],
+	"rules": {
+		"no-console": 0
+	}
+}
