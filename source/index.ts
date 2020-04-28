@@ -80,11 +80,11 @@ console.unicorn = function (error, length): void {
   if (isError) {
     // Node.js
     if (typeof window !== 'undefined') {
-      console.groupCollapsed('🐶> Stack Trace:');
+      console.groupCollapsed('🦄 > Stack Trace:');
       console.error(error.stack);
       console.groupEnd();
     } else {
-      console.log('🐶> Stack Trace:');
+      console.log('🦄 > Stack Trace:');
       console.error(error.stack);
     }
   }
