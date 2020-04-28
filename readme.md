@@ -58,7 +58,13 @@ yarn add unicorn.log
 ```
 require('unicorn.log');
 
-> console.unicorn('hello');
+> console.unicorn(null);
+> console.unicorn(undefined);
+> console.unicorn('hello 🦄');
+> console.unicorn({hello: '🦄'});
+> console.unicorn(new Error('hello 🦄'));
+> console.unicorn(new TypeError('hello 🦄'));
+> console.unicorn(chalk.bold.red(`✖ hello 🦄`)); # with chalk
 ```
 
 ## Issues

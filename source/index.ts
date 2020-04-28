@@ -12,28 +12,45 @@ export class Console {}
 
 enum Constants {
   LINE_LENGTH_VARIABLE = 0.66,
-  DEFAULT_LINE_LENGTH = 3,
+  DEFAULT_LINE_LENGTH = 4.0,
 }
 
 declare global {
   interface Console {
-    unicorn: (error: any, len?: number) => void;
+    unicorn: (error: any, length?: number) => void;
   }
 }
 
+function instanceOfError(e: any): boolean {
+  return (
+    e &&
+    e?.stack &&
+    e?.message &&
+    typeof e.stack === 'string' &&
+    typeof e.message === 'string'
+  );
+}
+
 // extends console.log
-console.unicorn = function (
-  error,
-  len = error?.toString().length * Constants.LINE_LENGTH_VARIABLE ||
-    Constants.DEFAULT_LINE_LENGTH
-): void {
+console.unicorn = function (error, length): void {
+  // ToDo: optionally log time & date
+
+  const isError = instanceOfError(error);
+  const message = isError ? error.message : error;
+  const len =
+    length ||
+    error?.toString().length * Constants.LINE_LENGTH_VARIABLE ||
+    Constants.DEFAULT_LINE_LENGTH;
+
   console.log(
     `
      /‾${`‾‾`.repeat(len)}‾
   🐶 < `,
-    error,
+    message,
     `
      \\_${`__`.repeat(len)}_
   `
   );
+
+  // ToDo: show error trace
 };
