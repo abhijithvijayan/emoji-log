@@ -1,9 +1,9 @@
 {
-	"name": "starter-module",
+	"name": "unicorn.log",
 	"version": "0.1.0",
-	"description": "My awesome module",
+	"description": "Log to console with 🦄",
 	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/starter-module",
+	"repository": "https://github.com/abhijithvijayan/unicorn.log.git",
 	"author": {
 		"name": "abhijithvijayan",
 		"email": "34790378+abhijithvijayan@users.noreply.github.com",
@@ -36,7 +36,11 @@
 		]
 	},
 	"keywords": [
-		"npm"
+		"console",
+		"log",
+		"error",
+		"unicorn",
+		"console.unicorn"
 	],
 	"dependencies": {},
 	"devDependencies": {
