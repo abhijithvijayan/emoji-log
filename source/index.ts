@@ -52,5 +52,15 @@ console.unicorn = function (error, length): void {
   `
   );
 
-  // ToDo: show error trace
+  if (isError) {
+    // Node.js
+    if (typeof window !== 'undefined') {
+      console.groupCollapsed('🐶> Stack Trace:');
+      console.error(error.stack);
+      console.groupEnd();
+    } else {
+      console.log('🐶> Stack Trace:');
+      console.error(error.stack);
+    }
+  }
 };
