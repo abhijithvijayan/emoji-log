@@ -33,6 +33,34 @@
 
 ❤️ it? ⭐️ it on [GitHub](https://github.com/abhijithvijayan/unicorn.log/stargazers) or [Tweet](https://twitter.com/intent/tweet?text=Check%20out%20unicorn.log%21%20by%20%40_abhijithv%0A%0ALog%20to%20console%20with%20🦄%0Ahttps%3A%2F%2Fgithub.com%2Fabhijithvijayan%2Funicorn.log%0A%0A%23console%20%23javascript%20%23typescript%20%23unicorn%20%23npm) about it.
 
+```
+    Art by Colin J. Randall
+
+               \
+                \
+                 \\
+                  \\
+                   >\/7
+               _.-(6'  \
+              (=___._/` \
+                   )  \ |
+                  /   / |
+                 /    > /
+                j    < _\
+            _.-' :      ``.
+            \ r=._\        `.
+           <`\\_  \         .`-.
+            \ r-7  `-. ._  ' .  `\
+             \`,      `-.`7  7)   )
+              \/         \|  \'  / `-._
+                         ||    .'
+                          \\  (
+                           >\  >
+                       ,.-' >.'
+                      <.'_.''
+                        <'
+```
+
 ## Table of Contents
 
 - [Installation](#installation)
