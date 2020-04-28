@@ -84,16 +84,27 @@ yarn add unicorn.log
 ## Usage
 
 ```
+# commonjs
 require('unicorn.log');
 
+# js or ts
+import 'unicorn.log';
+
+# Logging
 > console.unicorn(null);
 > console.unicorn(undefined);
-> console.unicorn('hello 🦄');
-> console.unicorn({hello: '🦄'});
-> console.unicorn(new Error('hello 🦄'));
-> console.unicorn(new TypeError('hello 🦄'));
-> console.unicorn(chalk.bold.red(`✖ hello 🦄`)); # with chalk
+> console.unicorn('hello world');
+> console.unicorn({hello: 'world'});
+> console.unicorn(new Error('hello world'));
+> console.unicorn(new TypeError('hello world'));
+> console.unicorn(chalk.bold.red(`✖ hello world`), 35); # with chalk & line limiting
 ```
+
+***Browser***
+<img src="browser.png" width="752">
+<br />
+***Node***
+<img src="node.png" width="752">
 
 ## Issues
 
@@ -106,10 +117,14 @@ Please file an issue [here](https://github.com/abhijithvijayan/unicorn.log/issue
 
 [**See Bugs**](https://github.com/abhijithvijayan/unicorn.log/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22type%3A+bug%22)
 
-### Linting & TypeScript Config
+## Linting & TypeScript Config
 
 - Shared Eslint & Prettier Configuration - [`@abhijithvijayan/eslint-config`](https://www.npmjs.com/package/@abhijithvijayan/eslint-config)
 - Shared TypeScript Configuration - [`@abhijithvijayan/tsconfig`](https://www.npmjs.com/package/@abhijithvijayan/tsconfig)
+
+## Credits
+
+This is sort of a fork of [this idea](https://twitter.com/wesbos/status/1254836059109642240) by [wesbos](https://github.com/wesbos)
 
 ## License
 

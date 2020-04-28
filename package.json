@@ -15,7 +15,9 @@
 	"main": "lib/index.js",
 	"types": "lib",
 	"files": [
-		"lib"
+		"lib",
+		"browser.png",
+		"node.png"
 	],
 	"scripts": {
 		"dev": "tsc --watch",
