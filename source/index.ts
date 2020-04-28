@@ -71,11 +71,11 @@ console.unicorn = function (error, length): void {
 
   console.log(
     `
-     /‾${`‾‾`.repeat(len)}‾
+      /‾${`‾‾`.repeat(len)}‾
   🐶 < `,
     message,
     `
-     \\_${`__`.repeat(len)}_
+      \\_${`__`.repeat(len)}_
   `
   );
 
