@@ -70,7 +70,7 @@ console.unicorn = function (error, length): void {
   console.log(
     `
       /‾${`‾‾`.repeat(len)}‾
-  🐶 < `,
+  🦄 < `,
     message,
     `
       \\_${`__`.repeat(len)}_
