@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
 /**
- *  @author abhijithvijayan <abhijithvijayan.in>
+ *  unicorn.log
+ *
+ *  @author   abhijithvijayan <abhijithvijayan.in>
+ *  @license  MIT License
  */
 
-console.log('hi');
+console.log('🦄');
