@@ -7,4 +7,24 @@
  *  @license  MIT License
  */
 
-console.log('🦄');
+// For TS to stop screaming
+export class Console {}
+
+declare global {
+  interface Console {
+    unicorn: (error: any, len?: number) => void;
+  }
+}
+
+// extends console.log
+console.unicorn = function (error, len = error.toString().length * 0.66): void {
+  console.log(
+    `
+     /‾${`‾‾`.repeat(len)}‾
+  🐶 < `,
+    error,
+    `
+     \\_${`__`.repeat(len)}_
+  `
+  );
+};
