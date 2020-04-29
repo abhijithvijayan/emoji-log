@@ -124,7 +124,9 @@ Please file an issue [here](https://github.com/abhijithvijayan/emoji-log/issues/
 
 ## Credits
 
-This is sort of a fork of [this idea](https://twitter.com/wesbos/status/1254836059109642240) by [wesbos](https://github.com/wesbos)
+- Thanks to [Robert Steele](https://antempus.dev/) for the idea of [unifying emojis](https://twitter.com/antempus/status/1255231242792042497)
+- This is sort of a fork of [this idea](https://twitter.com/wesbos/status/1254836059109642240) by [wesbos](https://github.com/wesbos)
+- Special thanks to [Jason Laster](https://github.com/jasonLaster) for transferring `emoji-log` name
 
 ## License
 
