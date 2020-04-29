@@ -4,7 +4,7 @@
   <a href="https://www.npmjs.com/package/emoji-log">
     <img src="https://img.shields.io/npm/v/emoji-log" alt="NPM" />
   </a>
-  <a href="https://travis-ci.org/abhijithvijayan/emoji-log">
+  <a href="https://travis-ci.com/abhijithvijayan/emoji-log">
     <img src="https://travis-ci.com/abhijithvijayan/emoji-log.svg?branch=master" alt="Travis Build" />
   </a>
   </a>
