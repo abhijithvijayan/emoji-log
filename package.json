@@ -1,6 +1,6 @@
 {
 	"name": "emoji-log",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Log to console with emojis 🦄",
 	"license": "MIT",
 	"repository": "https://github.com/abhijithvijayan/emoji-log.git",
