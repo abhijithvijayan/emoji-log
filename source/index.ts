@@ -46,7 +46,7 @@ enum Constants {
 declare global {
   interface Console {
     // ToDo: add correct types
-    emoji: (...args: any[]) => CustomConsole;
+    emoji: (...args: any[]) => Console;
   }
 }
 
