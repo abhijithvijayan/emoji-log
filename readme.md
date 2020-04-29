@@ -91,13 +91,14 @@ require('emoji-log');
 import 'emoji-log';
 
 # Logging
+> console.emoji();
 > console.emoji(null);
 > console.emoji(undefined);
 > console.emoji('hello world');
-> console.emoji({hello: 'world'});
-> console.emoji(new Error('hello world'));
-> console.emoji(new TypeError('hello world'));
-> console.emoji(chalk.bold.red(`✖ hello world`), 35); # with chalk & line limiting
+> console.emoji('🦄', 'hello world'); # with custom emoji & data
+> console.emoji('🐸', {hello: 'world'}); # maybe objects
+> console.emoji('🔥', new Error('I set the length and emoji'), 15); # with custom emoji, data & line limit length
+
 ```
 
 ***Browser***
