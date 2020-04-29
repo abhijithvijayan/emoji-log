@@ -1,9 +1,9 @@
 {
-	"name": "unicorn.log",
-	"version": "1.7.0",
-	"description": "Log to console with 🦄",
+	"name": "emoji-log",
+	"version": "0.1.0",
+	"description": "Log to console with emojis 🦄",
 	"license": "MIT",
-	"repository": "https://github.com/abhijithvijayan/unicorn.log.git",
+	"repository": "https://github.com/abhijithvijayan/emoji-log.git",
 	"author": {
 		"name": "abhijithvijayan",
 		"email": "34790378+abhijithvijayan@users.noreply.github.com",
@@ -41,8 +41,8 @@
 		"console",
 		"log",
 		"error",
-		"unicorn",
-		"console.unicorn"
+		"emoji",
+		"emoji-log"
 	],
 	"dependencies": {},
 	"devDependencies": {

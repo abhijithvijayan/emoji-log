@@ -1,5 +1,5 @@
 /**
- *  unicorn.log
+ *  emoji-log
  *
  *  @author   abhijithvijayan <abhijithvijayan.in>
  *  @license  MIT License
@@ -42,7 +42,7 @@ enum Constants {
 
 declare global {
   interface Console {
-    unicorn: (error: any, length?: number) => void;
+    emoji: (error: any, length?: number) => void;
   }
 }
 
@@ -57,7 +57,7 @@ function instanceOfError(e: any): boolean {
 }
 
 // extends console.log
-console.unicorn = function (error, length): void {
+console.emoji = function (error, length): void {
   // ToDo: optionally log time & date
 
   const isError = instanceOfError(error);
