@@ -33,16 +33,20 @@
  */
 
 // For TS to stop screaming
-export class Console {}
+export class CustomConsole {}
 
 enum Constants {
   LINE_LENGTH_VARIABLE = 0.66,
   DEFAULT_LINE_LENGTH = 4.0,
+  ONE = 1,
+  TWO = 2,
+  THREE = 3,
 }
 
 declare global {
   interface Console {
-    emoji: (error: any, length?: number) => void;
+    // ToDo: add correct types
+    emoji: (...args: any[]) => CustomConsole;
   }
 }
 
@@ -56,8 +60,7 @@ function instanceOfError(e: any): boolean {
   );
 }
 
-// extends console.log
-console.emoji = function (error, length): void {
+function logToConsole(error: any, emoji = '🐶', length?: any): void {
   // ToDo: optionally log time & date
 
   const isError = instanceOfError(error);
@@ -70,7 +73,7 @@ console.emoji = function (error, length): void {
   console.log(
     `
       /‾${`‾‾`.repeat(len)}‾
-  🦄 < `,
+  ${emoji} < `,
     message,
     `
       \\_${`__`.repeat(len)}_
@@ -80,12 +83,55 @@ console.emoji = function (error, length): void {
   if (isError) {
     // Node.js
     if (typeof window !== 'undefined') {
-      console.groupCollapsed('🦄 > Stack Trace:');
+      console.groupCollapsed(`${emoji} > Stack Trace:`);
       console.error(error.stack);
       console.groupEnd();
     } else {
-      console.log('🦄 > Stack Trace:');
+      console.log(`${emoji} > Stack Trace:`);
       console.error(error.stack);
     }
   }
+}
+
+console.emoji = function (...args): Console {
+  const log: any[] = [];
+
+  log[0] = function (): {} {
+    logToConsole('Meow', '🐱');
+
+    return this;
+  };
+
+  log[Constants.ONE] = function (error: any): {} {
+    logToConsole(error);
+
+    return this;
+  };
+
+  log[Constants.TWO] = function (emoji: string, error: any): {} {
+    logToConsole(error, emoji);
+
+    return this;
+  };
+
+  log[Constants.THREE] = function (
+    emoji: string,
+    error: any,
+    length: number
+  ): {} {
+    logToConsole(error, emoji, length);
+
+    return this;
+  };
+
+  this.emoji = function (...passedArgs): Console {
+    // call according to index
+    log[passedArgs.length](...passedArgs);
+
+    return this;
+  };
+
+  this.emoji(...args);
+
+  return this;
 };
