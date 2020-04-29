@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/npm/v/emoji-log" alt="NPM" />
   </a>
   <a href="https://travis-ci.org/abhijithvijayan/emoji-log">
-    <img src="https://travis-ci.org/abhijithvijayan/emoji-log.svg?branch=master" alt="Travis Build" />
+    <img src="https://travis-ci.com/abhijithvijayan/emoji-log.svg?branch=master" alt="Travis Build" />
   </a>
   </a>
   <a href="https://david-dm.org/abhijithvijayan/emoji-log">
